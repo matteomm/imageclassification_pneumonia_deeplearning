@@ -10,7 +10,7 @@ In this project, we have built a convolutional network trained on a dataset of 5
 
 # Project Structure
 
-1. [ File Description ](#methods_used)
+1. [ File Description ](#file_descriptions)
 2. [ Technologies Used ](#technologies_used)
 3. [ Executive Summary ](#executive_summary)
     * [ Dataset Information ](#dataset_info)
@@ -20,7 +20,30 @@ In this project, we have built a convolutional network trained on a dataset of 5
   
 
 
-<a name="methods_used"></a>
-## Methods Used
+<a name="file_descriptions"></a>
+## File Descriptions
+
+File Descriptions
+- ipynb_checkpoints: different notebooks version going from preprocessing to modelling
+- index_101.ipynb: notebook where the models were made, tuned and evaluated
+- data: contains dataset used for the analysis
+- references: links to the source material referenced in the notebook
+- images: jpg images taken from the jupyter notebook
+- pneumoniadeep_presentation: pdf format of a presentation with key insights for non-tecnhical stakeholders
 
 
+<a name="#technologies_used"></a>
+
+## Technologies Used
+- Python
+- Pandas
+- Numpy
+- Keras
+- Matplotlib
+
+
+<a name="##executive_summary"></a>
+
+## Executive Summary
+
+The main goal of this project was to create a deep learning algorithm with convolutional neural networks and tuning of its features. Given the binary nature of this issue and also presence of class imbalance in our dataset, we have chosen roc score as the main metric to measure success. Our winning model is capable of correctly identifying xx over xx people affected by pneumonia.
