@@ -1,7 +1,7 @@
 # Deep Learning Image Classification Model for Pneumonia Cases
 
 <p align="center">
-  <img src="https://github.com/matteomm/imageclassification_pneumonia_deeplearning/tree/master/images/cover.png" width=550>
+  <img src="https://github.com/matteomm/imageclassification_pneumonia_deeplearning/blob/master/images/cover.png" width=650>
 </p>
 
 Despite the availability of safe and effective antibiotics and vaccines for treatment and prevention, pneumonia is a leading cause of death worldwide and the leading infectious disease killer. This disease has a particularly high mortality rate especially amongst children of age 5 and younger. 
@@ -35,7 +35,7 @@ File Descriptions
 - pneumoniadeep_presentation: pdf format of a presentation with key insights for non-tecnhical stakeholders
 
 
-<a name="#technologies_used"></a>
+<a name="technologies_used"></a>
 
 ## Technologies Used
 - Python
@@ -45,23 +45,23 @@ File Descriptions
 - Matplotlib
 
 
-<a name="##executive_summary"></a>
+<a name="executive_summary"></a>
 
 ## Executive Summary
 
 The main goal of this project was to create a deep learning algorithm with convolutional neural networks and tuning of its features. Given the binary nature of this issue and also presence of class imbalance in our dataset, we have chosen roc score as the main metric to measure success. Our winning model is capable of correctly identifying 7 over 10 people affected by pneumonia.
 
-<a name="#dataset_info"></a>
+<a name="dataset_info"></a>
 ###  Dataset information 
 
 The original dataset can be found at this link [here](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) from Kaggle. Initially the dataset was divided into three sub-folders, respectively for training, validation and test. Each of these folders contain example of both healthy and unhealthy patients affected by pneumonia. All images were in different size but the average was in the region of 1100x1100.
 
-<a name="#data_cleaning"></a>
+<a name="data_cleaning"></a>
 ###  Image pre-processing
 
 Images were first converted to grayscale since having RGB layers for x-rays did not make any difference. Also, we performed two separate line of testing with progressive resizing. The first with all images sized to 200x200 and then a second one with double the pixels (500x500). This was done in order to see whether excessive shrinking of the images would compromise overall performance.
 
-<a name="#modelling"></a>
+<a name="modelling"></a>
 
 ###  Modelling
 
@@ -74,11 +74,11 @@ We tried different combinations but the best performing NN seemed to be the one 
 The winning model had an overall accuracy of 71% and roc_score of 88% across the 600 test set. Attaching below a graph of our roc_cruve for training and test set:
 
 <p align="center">
-  <img src="https://github.com/matteomm/imageclassification_pneumonia_deeplearning/tree/master/images/roc_curve_final.png" width=550>
+  <img src="https://github.com/matteomm/imageclassification_pneumonia_deeplearning/blob/master/images/roc_curve_final.png" width=550>
 </p>
 
 
-<a name="#insights"></a>
+<a name="insights"></a>
 ###  Costs Evaluation and Performance
 
 In the final section, we concentrated on evaluating possibles costs associated to our model off some expenses report related to US pneumonia cases. One of the undelrying assumptions here is that the Chinese market faces similar costs to the US one in terms of pneumonia related cases. Off ours stats (references available in the folder 'references') we have estimated that false negatives, resulting in hospitalization would be quantified in the region of $ 10,800 per patient. Apart from True Negatives incurring in $0 cost, the remaining cases were assessed to be in the region of $480 covering teh costs of medical supplies. Our threshold selection was thrown off by a significanty small prevalence since there are roughly 2 millions and a half pneumonia cases in China over the total population. We arbitrarily set the threshold at around .35 in order to minimise the instance of false negatives, being the costliest of outcomes and also potentially incurring in death.
@@ -86,7 +86,7 @@ In the final section, we concentrated on evaluating possibles costs associated t
 Below there's an image of our final confusion matrix on the test set:
 
 <p align="center">
-  <img src="https://github.com/matteomm/imageclassification_pneumonia_deeplearning/tree/master/images/confusion.png" width=550>
+  <img src="https://github.com/matteomm/imageclassification_pneumonia_deeplearning/blob/master/images/confusion.png" width=550>
 </p>
 
 
