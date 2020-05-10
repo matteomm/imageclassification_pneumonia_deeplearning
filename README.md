@@ -48,5 +48,7 @@ File Descriptions
 
 The main goal of this project was to create a deep learning algorithm with convolutional neural networks and tuning of its features. Given the binary nature of this issue and also presence of class imbalance in our dataset, we have chosen roc score as the main metric to measure success. Our winning model is capable of correctly identifying 7 over 10 people affected by pneumonia.
 
+<a name="#dataset_info"></a>
+###  Dataset information 
 
-# Dataset information 
+The original dataset can be found at this link here<a name="<a name="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia"></a>"></a> from Kaggle.
