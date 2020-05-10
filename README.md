@@ -51,4 +51,4 @@ The main goal of this project was to create a deep learning algorithm with convo
 <a name="#dataset_info"></a>
 ###  Dataset information 
 
-The original dataset can be found at this link here<a name="<a name="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia"></a>"></a> from Kaggle.
+The original dataset can be found at this link [here](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)from Kaggle
